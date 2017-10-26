@@ -1,0 +1,15 @@
+/*
+Theme name: WR Main Theme
+Author: Webres Studio
+Author URI: https://www.webres-studio.com/
+Description: Main template with a lot of features to build a strong website which responds to the new requeriments in technology that exists on present.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: responsive, colors, new technology, website
+*/
+// In Terminal: sass --watch style.scss:../style.css
+
+@import 'variables';
+@import 'partials';
+@import 'responsive';

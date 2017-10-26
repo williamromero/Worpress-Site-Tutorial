@@ -1,0 +1,307 @@
+//////////////////////////// HEADER //////////////////////////// 
+html,
+body {
+  background-color: $background-color;
+  display: block;
+  font-family: $roboto-font;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.container,
+.row {
+  float: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.top-login-bar {
+  background-color: #546572;
+  border-color: #546572;
+  border-radius: 0;
+  color: #fff;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 101;
+}
+
+.principal-header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, .35) 25%, transparent 95%);
+  float: none;
+  padding: 0;
+  position: fixed;
+  top: 0;  
+  z-index: 100;
+
+  .header-elements-container {
+    display: flex;
+
+    .header-logo-block {
+      padding: 0;
+
+      .header-logo-link {
+        align-items: center;
+        color: $white;
+        display: flex;
+        font-weight: 100;
+        padding: .5em 0;
+        text-decoration: none;
+
+        .navbar-brand {
+          height: 75px;
+          margin-right: .5em;
+          padding: 0;
+        }
+
+        strong {
+          padding-left: .5em;
+        }
+      }
+    }
+  }
+}
+
+.nav-menu-block {
+  display: flex;
+  float: right;
+  margin: 0 auto;
+  padding: 0;
+
+  .nav-list-navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em 0;
+    position: absolute;
+    right: 0;
+
+    .nav-item {
+      padding: 0 1em;
+      
+    }
+
+    .drop-frontpage {
+      background-color: transparent;
+      
+      .btn-secondary {
+        background-color: #38c483;
+        box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+      }
+
+      .drop-frontpage-button {
+        // background-color: #38c483 !important; 
+        border: none;
+        color: $white;
+      }        
+    }
+
+    &:nth-child(4) {
+      padding: 0;
+    }
+  }
+
+  .nav-link {
+    color: $white;
+  }
+
+  .nav-link-blue {
+    color: #3d5666;
+    text-decoration: none;
+  }
+}
+
+.dropdown-element-languages {
+  position: fixed;
+  right: 75px;
+  top: 100px;
+  z-index: 10;
+
+  .principal-header-lang-dropdown {
+    background-color: rgba(0, 0, 0, .5);
+    border-color: $white;
+    color:  $white;
+    height: 50px;
+    margin: 1em auto;
+    position: absolute;
+    right: -80px;
+
+    &:after {
+      border: 0;
+      margin-left: 0;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: black;
+      border-color: $white;
+      color: $white;
+    }
+
+  }
+  .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+    left: 95px;
+    position: relative;
+    top: 63px;
+
+    a {
+      color: white;
+    }
+  }
+
+  .btn-secondary:active:hover,
+  .btn-secondary:active:focus,
+  .btn-secondary:active.focus,
+  .btn-secondary.active:hover,
+  .btn-secondary.active:focus,
+  .btn-secondary.active.focus,
+  .open > .btn-secondary.dropdown-toggle:hover,
+  .open > .btn-secondary.dropdown-toggle:focus,
+  .open > .btn-secondary.dropdown-toggle.focus {
+    background-color: rgba(0, 0, 0, .5) !important;
+    border-color: #8c8c8c !important;
+    color: #fff !important;
+  }  
+}
+
+.btn-secondary:active, 
+.btn-secondary.active, .open > .btn-secondary.dropdown-toggle {
+  background-color: rgba(0, 0, 0, .5) !important;
+  border-color: #8c8c8c  !important;
+  background-image: none;  
+  color: $white !important;
+}
+
+.dropdown-item:focus, 
+.dropdown-item:hover {
+  background-color: #38c483;
+}
+
+.nav-menu-block-responsive {
+  display: none;
+}
+
+.nav-list-navbar-responsive {
+  display: none;
+}
+//////////////////////////// HEADER //////////////////////////// 
+
+//////////////////////////// FOOTER //////////////////////////// 
+.footer-general-container {
+  background-color: $footer-background-color;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+
+  .footer-general-container-block {
+    // background-color: red;
+    display: flex;
+    float: none;
+    height: 350px;
+    margin: 0 auto;
+    max-width: 1068px;
+    padding: 0;
+
+    .footer-general-container-block-boxes {
+      margin: 0 auto;
+      padding: 0;
+
+      .footer-logo-link {
+        align-items: center;
+        color: $white;
+        display: flex;
+        font-weight: lighter;
+        margin: 1em auto;
+        padding: 0;
+        text-decoration: none;
+
+        .footer-brand {
+          height: 70px;
+          margin: 0 .5em 0 0;
+          padding: 0;
+        }
+
+        strong {
+          padding: 0 .25em;
+        }
+      }
+
+      .footer-general-container-block-boxes-parr {
+        color: $white;
+        font-size: .8em;
+        font-weight: lighter;
+      }
+
+      .footer-social-network-link {
+        display: flex;
+        height: 40px;
+        margin: 0 auto;
+        padding: 0;
+
+        .footer-social-network-link-blocks {
+          height: 40px;
+          margin: 0 1em 0 0;
+
+          .footer-sn-icons-img {
+            height: 100%;
+          }
+        }
+      }
+
+      .footer-general-container-block-list-link {
+        list-style: none;
+        margin: 2.5em auto;
+
+        li {
+          color: $white;
+        }
+
+        .footer-nav-item {
+          align-items: center;
+          display: flex;
+          margin: 0 auto;
+
+          .footer-nav-link-img {
+            height: 12.5px;
+          }
+
+          .footer-nav-link {
+            color: $white;
+            font-size: .8em;
+            font-weight: lighter;
+            padding: .5em;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-general-container-block-bottom-line {
+    background-color: $dark-footer-background-color;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+
+    .footer-general-container-block-bottom-line-txt {
+      color: $white;
+      display: flex;
+      font-size: 0.9em;
+      font-weight: lighter;
+      margin: 0 auto;
+      padding: .5em;
+      text-align: center;
+
+      strong {
+        a {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+//////////////////////////// FOOTER //////////////////////////// 
